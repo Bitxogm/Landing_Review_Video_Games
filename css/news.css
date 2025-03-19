@@ -1,0 +1,282 @@
+/* ESTILOS MAIN / CONTENIDO PRINCIPAL */
+.layout__main {
+    grid-area: main;
+    margin-right: 3rem;
+}
+
+/* ESTILOS PARA LAS NOTICIAS */
+.main__news {
+    width: 100%;
+}
+
+.news__main-post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-bg-marquee);
+}
+
+.main-post__image {
+    position: relative;
+    overflow: hidden;
+    flex-basis: 50%;
+}
+
+.main-post__info {
+    flex-basis: 50%;
+}
+
+.main-post__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.main-post__link-title {
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__title:hover .main-post__link-title {
+    color: var(--color-secondary);
+}
+
+.main-post__img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__img:hover {
+    transform: scale(1.1);
+}
+
+.main-post__container-category {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secondary);
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__container-category:hover {
+    color: var(--color-bg-navbar);
+}
+
+.main-post__category {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-principal);
+}
+
+.main-post__meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.main-post__description {
+    font-size: 1.3rem;
+    color: var(--color-titles);
+    margin-bottom: 1rem;
+}
+
+.main-post__footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ESTILOS PARA LOS ARTICULOS DE LA SECCION DE NOTICIAS */
+.news__list {
+    display: flex;
+    flex-direction: row;
+    /* Ahora se colocan en fila , pero necesitamos que esten dos elementos por fila y para esto aplicamos flex-wrap,
+    que si el flex detecta que estan muy apiñados
+    los coloca de la mejor manera posible dandoles espacios:*/
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-bottom: 6rem;
+}
+
+.news__post {
+    width: 40rem;
+    display: flex;
+    gap: 1rem;
+    /* Con flex basics conseguimos que se coloquen dos por fila  */
+    flex-basis: 45%;
+}
+
+.news__image {
+    overflow: hidden;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.news__img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.news__image:hover .news__img {
+    transform: scale(1.1);
+}
+
+.news__detail {
+    width: 75%;
+}
+
+.news__title-post {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.news__link-title {
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.news__link-title:hover {
+    color: var(--color-secondary);
+}
+
+.news__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ESTILOS PARA LA SECCION DE JUEGOS */
+.main__games {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.games__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.games__game {
+    position: relative;
+}
+
+.game__container-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.game__img {
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.game__img:hover {
+    transform: scale(1.1);
+}
+
+.game__container-rating {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 9;
+}
+
+.game__details {
+    width: 100%;
+    min-height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    padding-right: 5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.game__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.game__link-title {
+    color: var(--color-principal);
+    transition: all 300ms ease-in-out;
+}
+
+.game__title:hover .game__link-title {
+    text-shadow: 0 0 5px black;
+}
+
+.game__category {
+    background-color: var(--color-secondary);
+}
+
+/* ESTILOS ULTIMOS ARTICULOS */
+.main__posts {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.posts__list-header,
+.recent__list-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: -0.3rem;
+}
+
+.list-header__item {
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.posts__container {
+    flex-wrap: wrap;
+}
+
+.post__details {
+    width: 100%;
+    height: 100%;
+    display: inline-block
+}
+
+.posts__post {
+    flex-basis: calc(50% - 2rem);
+}
+
+/* ESTILOS BOTON MAIN */
+
+.post__read-more-btn {
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--color-bg-navbar);
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 0.4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.post__container-btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+}

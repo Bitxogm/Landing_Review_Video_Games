@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Carga de fuentes-->
+    <link href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" rel="stylesheet">
+    <link href="./assets/fonts/montserrat/montserrat.css" rel="stylesheet">
+
+    <!-- Cargar estilos -->
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="./assets/css/responsive.css" rel="stylesheet">
+
+
+    <!-- Cargar scripts JS -->
+
+    <script src="./js/menu.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/marquesina.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/highlights.js"></script>
+    <script src="/js/videos.js"></script>
+    <script src="/js/carousel_games.js"></script>
+    <script src="/js/news.js"></script>
+    <script src="/js/aside.js"></script>
+    <script src="/js/footer.js"></script>
+
+    <title>Landing-Review_Videogames</title>
+</head>
+
+<body>
+
+    <!-- Barra superior decorativa -->
+    <div class="decoration-bar"></div>
+
+    <div class="layout">
+        <!-- Estructura Principal -->
+        <div id="header"></div>
+        <!-- Header/Cabecera -->
+
+        <!-- Navbar/Barra navegacion 
+            Cuando separamos las secciones en archivos independientes , empeze llevando toda la seccion al fichero independiente,
+            quedaba desordenado y los estilos no eran los mismos , por eso dejo la seccion y meto el div que carga el script -->
+        <section class="layout__nav">
+            <div id="navbar"></div>
+        </section>
+
+        <!-- MENU DEPLEGABLE -->
+        <!-- Boton para el menu Responsive -->
+
+        <!--Marquesina 
+             Con esta seccion no hay problemas , esta todo contenido en un div . -->
+        <section class="layout__marquee">
+            <h3 class="marquee_header">No te lo pierdas</h3>
+            <div id="marquesina"></div>
+        </section>
+
+
+        <!-- Slider 
+                     Con esta seccion tambien problemas  al separar en otro archivo , he tenido que meter en un div nuevo los articles , sino quedaban totalmente
+                     desordenados, le aplicamos la misma clase que a la seccion para que los estilos sean los mismos . -->
+        <section class="layout__slider">
+            <div id="slider"></div>
+        </section>
+
+
+        <!-- Highlights/Mejores momentos 
+                          Esta seccion tambien va bien , va todo envuelto en un div , solo el header esta fuera del div , pero queda bien-->
+        <section class="layout__highlights">
+            <div id="highlights"></div>
+        </section>
+
+        <!-- Ultimos videos 
+                           Esta seccion tampoco tiene problemas de distribucion al separar el contenido en otro archivo -->
+        <section class="layout__videos">
+            <div id="videos"></div>
+
+
+            <!--Carousel de juegos  
+                                       Todo el contenido esta dentro de una ul , pero parece que no da problemas al separar el html en otro archivo  -->
+            <section class="layout__carousel-games">
+                <div id="carousel_games"></div>
+            </section>
+        </section>
+
+        <!-- Contenido principal 
+         Dejamos el main para meter el div con el id "news" que llama al news.js , las secciones llevamos a archivo separado
+         news.htl -->
+        <main class="layout__main">
+            <div id="news"></div>
+        </main>
+
+        <!-- Aside / Barra lateral -->
+
+        <aside class="layout__aside">
+            <div id="aside"></div>
+
+        </aside>
+    </div>
+
+
+    <!--Footer /Pie de pagina  -->
+    <!-- <footer class="layout__footer"> -->
+
+    <div id="footer"></div>
+
+</body>
+
+</html>

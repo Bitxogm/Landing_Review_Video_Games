@@ -1,0 +1,56 @@
+            
+
+/* Empezamos creando las variables generales para todo el diseño */
+:root {
+    --color-principal: #fff;
+    --color-secondary: #329153;
+    --color-bg-navbar: #333946;
+    --color-border-list: rgba(255, 255, 255, 0.3);
+    --color-hover-sublist-item: rgba(0, 0, 0, 0.05);
+    --color-shadow: rgba(0, 0, 0, 0.10);
+    --color-bg-marquee: #EEEE;
+    --color-text-marquee: #7C7C7C;
+    --color-titles: #333333;
+    --color-bg-aside: #F5F5F5;
+    --color-twitter: #2FC2EF;
+    --color-facebook: #4C66A4;
+    --color-instagram: #E44C89;
+    --color-youtube: #CC181E;
+    --color-linkedin: #F4A62A;
+    --color-bg-footer: #222222;
+    --color-footer-down: #111111;
+}
+
+/* Establecemos un tamaño de fuente base para todo el html 1rem = 10px */
+html {
+    font-size: 10px;
+}
+
+/* Cargamos fuente monserrat par todo el body y los estilos generales */
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--color-principal);
+}
+
+/* Estructura y Layout */
+.layout {
+    display: grid;
+    /* Establecemos mediante string todas las filas y columnas */
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "marquee marquee"
+        "slider slider"
+        "high high"
+        "videos videos"
+        "carousel carousel"
+        "main aside"
+    ;
+    grid-template-columns: 70% 30%;
+    width: 55vw;
+    min-width: 100rem;
+    margin: 0 auto;
+}

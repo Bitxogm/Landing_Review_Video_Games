@@ -1,0 +1,360 @@
+/* ESTILOS ASIDE / BARRA LATERAL */
+.layout__aside {
+    grid-area: aside;
+    background-color: var(--color-bg-aside);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.login__container {
+    width: 100%;
+}
+
+.login__form {
+    width: 100%;
+}
+
+.form__container-username,
+.form__container-password,
+.form__container-remember {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.form__input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    padding: 0.5rem;
+}
+
+.form__label {
+    font-weight: 600;
+}
+
+.form__container-remember .form__label,
+.form__container-remember .form__input {
+    width: auto;
+    display: inline;
+}
+
+.form___submit {
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.login__lost-pass,
+.login__register {
+    display: block;
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+/* ESTILOS REDES SOCIALES */
+.aside__social {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.social__item {
+    position: relative;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-principal);
+    transition: all 300ms ease;
+    background-color: var(--color-twitter);
+    border-radius: 0.5rem;
+}
+
+.social__item:hover {
+    padding-left: 1rem;
+    margin-top: 0.2rem;
+}
+
+.social__link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-principal);
+}
+
+.social__icon {
+    margin-right: 1rem;
+}
+
+.social__icon>.fa-brands {
+    font-size: 3.6rem;
+}
+
+.social__number {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.social__word {
+    line-height: 1;
+    font-size: 1.3rem;
+    opacity: 0.75;
+}
+
+.social__followers {
+    position: absolute;
+    left: 8rem;
+}
+
+.social__item--blue {
+    background-color: var(--color-twitter);
+}
+
+.social__item--dark-blue {
+    background-color: var(--color-facebook);
+}
+
+.social__item--red {
+    background-color: var(--color-youtube);
+}
+
+.social__item--yellow {
+    background-color: var(--color-linkedin);
+}
+
+.social__item--pink {
+    background-color: var(--color-instagram);
+}
+
+/* ESTILOS ULTIMOS TWEETS */
+.aside__tweets {
+    background-color: var(--color-twitter);
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+}
+
+.tweets__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tweets__header .fa-brands {
+    margin-right: 1rem;
+}
+
+.tweets__content {
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.tweets__title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.tweets_name {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ESTILOS POST RECIENTES */
+.aside__recent {
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.recent__subheader {
+    position: relative;
+    right: 1rem;
+}
+
+.recent__list-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.recent__item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.recent__container-img {
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+}
+
+.recent__img {
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+.recent__img:hover {
+    transform: scale(1.1);
+}
+
+.recent__detail {
+    width: 100%;
+}
+
+.recent__title {
+    font-size: 1.5rem;
+}
+
+.recent__meta-info {
+    padding-right: 3rem;
+}
+
+.recent__link-title {
+    color: var(--color-titles);
+    transition: all 300ms ease;
+    margin-bottom: 1rem;
+    padding-right: 0.5rem;
+}
+
+.recent__link-title:hover {
+    color: var(--color-secondary);
+}
+
+.recent__container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* SECCION ULTIMAS REVIEWS / ASIDE */
+.aside__last-reviews {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.aside__last-reviews .last-reviews__list-header {
+    display: flex;
+    gap: 0.8rem;
+
+
+}
+
+.aside__last-reviews .last-reviews__title {
+    background: none;
+}
+
+.aside__last-reviews .last-reviews__link-title {
+    padding-right: 0.5rem;
+}
+
+.last-reviews__link-title-right {
+    background: none;
+    font-size: 1.1rem;
+}
+
+.last-reviews__list-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list-reviews__item {
+    width: 100%;
+}
+
+.list-reviews__container-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-reviews__title {
+    text-align: left;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.list-reviews__title-link {
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.list-reviews__title-link:hover {
+    color: var(--color-secondary);
+}
+
+.list-reviews__mark {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-titles);
+}
+
+.list-reviews__progressbar {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--color-bg-navbar);
+    margin-top: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+.list-reviews__bar {
+    height: 100%;
+    border-radius: 0.3rem;
+    background-color: var(--color-secondary);
+}
+
+.list-reviews__bar-bar1 {
+    width: 30%;
+}
+
+.list-reviews__bar-bar2 {
+    width: 45%;
+}
+
+.list-reviews__bar-bar3 {
+    width: 60%;
+}
+
+.list-reviews__bar-bar4 {
+    width: 80%;
+}
+
+.list-reviews__bar-bar5 {
+    width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

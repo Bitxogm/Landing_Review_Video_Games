@@ -1,0 +1,225 @@
+/* Estilos mejores momentos highlights */
+
+.layout__highlights {
+    grid-area: high;
+    margin-bottom: 3rem;
+}
+
+.highlights__posts,
+.posts__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.highlights__post,
+.posts__post {
+    flex-basis: 33%;
+    height: 100%;
+    border-bottom: 2px solid var(--color-bg-marquee);
+}
+
+.highlights__image,
+.post__container-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.highlights__img,
+.post__img {
+    transition: all 300ms ease;
+}
+
+.highlights__img:hover,
+.post__img:hover {
+    transform: scale(1.1);
+}
+
+.highlights__category,
+.game__category,
+.post__container-category {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: var(--color-secondaryy);
+    transition: all 300ms;
+}
+
+.highlights__category:hover,
+.post__container-category:hover {
+    background-color: var(--color-bg-navbar);
+}
+
+.highlights__name-category,
+.post__category {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-principal);
+}
+
+.highlights__title,
+.post__title {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.highlights__link,
+.post__link {
+    color: var(--color-titles);
+    transition: all 300ms;
+}
+
+.highlights__title:hover>.highlights__link,
+.post__title:hover>.post__link {
+    color: var(--color-secondary);
+}
+
+.highlights__meta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.highlights__author,
+.main-video__author,
+.video__author,
+.main-post__author,
+.news__author,
+.post__author,
+.recent__author {
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+.highlights__date,
+.main-video__date,
+.video__date,
+.main-post__date,
+.news__data,
+.post__date {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--color-text-marquee);
+}
+
+.highlights__description,
+.post__description {
+    color: var(--color-titles);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.highlights__footer-post,
+.footer-post__container,
+.footer-info__container,
+.post__footer-post,
+.recent__meta-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-basis: 21%;
+}
+
+.footer-post__container,
+.footer-info__container,
+.recent__meta-info {
+    gap: 1rem;
+}
+
+.footer-post__comments,
+.footer-post__views,
+.main-video__comments,
+.main-video__views,
+.main-post__views,
+.main-post__comments,
+.recent__comments,
+.recent__views {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--color-text-marquee);
+}
+
+.footer-post__comments>.fa-solid,
+.footer-post__views>.fa-solid,
+.main-video__comments>.fa-solid,
+.main-video__views>.fa-solid,
+.main-post__comments>.fa-solid,
+.main-post__views>.fa-solid,
+.recent__comments>.fa-solid,
+.recent__views>.fa-solid {
+    margin-right: 0.2rem;
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.recent__comments>a,
+.footer-post__comments>a {
+    display: inline;
+}
+
+.footer-post__read-more,
+.main-post__read-more,
+.post__btn-read-more {
+    color: var(--color-text-marquee);
+    border: 1px solid var(--color-text-marquee);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-post__read-more:hover,
+.main-post__read-more:hover,
+.post__btn-read-more:hover {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+/* Estilos sub encabezados */
+.news__subheader,
+.games__subheader,
+.login__subheader,
+.posts__subheader,
+.recent__subheader,
+.videos__subheader,
+.highlights__subheader,
+.last-reviews__subheader {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-bg-navbar);
+    padding: 0.5rem;
+}
+
+.subheader__title,
+.news__title,
+.list-header__title,
+.last-reviews__title,
+.last-reviews__link-title,
+.list-header__link-title {
+    display: inline;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.2rem;
+    color: var(--color-principal);
+    background-color: var(--color-secondary);
+}
+

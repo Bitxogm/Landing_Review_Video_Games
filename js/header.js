@@ -1,0 +1,26 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const HEADER = document.getElementById('header');
+
+    // Cargar solo el header
+    fetch('/html/header.html')
+
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al cargar el header: ' + response.statusText);
+            }
+            return response.text();
+        })
+
+        .then(data => {
+            HEADER.innerHTML = data; // Inserta el contenido del header
+        })
+
+        .catch(error => console.error('Error: ', error));
+
+ 
+        
+
+
+
+});
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
