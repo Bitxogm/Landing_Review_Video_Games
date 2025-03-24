@@ -54,27 +54,6 @@
     transform: scale(1.1);
 }
 
-.main-post__container-category {
-    position: absolute;
-    left: 0;
-    bottom: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--color-secondary);
-    transition: all 300ms ease-in-out;
-}
-
-.main-post__container-category:hover {
-    color: var(--color-bg-navbar);
-}
-
-.main-post__category {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--color-principal);
-}
-
 .main-post__meta {
     display: flex;
     flex-direction: row;
@@ -107,7 +86,7 @@
 }
 
 .news__post {
-    width: 40rem;
+    width: 35rem;
     display: flex;
     gap: 1rem;
     /* Con flex basics conseguimos que se coloquen dos por fila  */
@@ -160,13 +139,15 @@
 .main__games {
     width: 100%;
     margin-bottom: 3rem;
+    /* background-color: red; */
 }
 
 .games__container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .games__game {
@@ -222,10 +203,6 @@
     text-shadow: 0 0 5px black;
 }
 
-.game__category {
-    background-color: var(--color-secondary);
-}
-
 /* ESTILOS ULTIMOS ARTICULOS */
 .main__posts {
     width: 100%;
@@ -250,7 +227,11 @@
 }
 
 .posts__container {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .post__details {
@@ -265,18 +246,21 @@
 
 /* ESTILOS BOTON MAIN */
 
-.post__read-more-btn {
-    width: 100%;
+.post__container-btn {
+    width: 10rem;
     text-align: center;
-    border: 1px solid var(--color-bg-navbar);
-    font-weight: 500;
-    font-size: 1.6rem;
     text-transform: uppercase;
-    padding: 0.4rem;
+    border: 1px solid var(--color-bg-navbar);
     transition: all 300ms ease-in-out;
+    font-weight: 500;
+    margin: 0.2rem;
+    font-size: 1.6rem;
+    padding: 0.4rem;
 }
 
 .post__container-btn:hover {
+
     background-color: var(--color-secondary);
     color: var(--color-principal);
 }
+

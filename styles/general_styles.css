@@ -1,5 +1,3 @@
-            
-
 /* Empezamos creando las variables generales para todo el diseño */
 :root {
     --color-principal: #fff;
@@ -54,3 +52,4 @@ body {
     min-width: 100rem;
     margin: 0 auto;
 }
+

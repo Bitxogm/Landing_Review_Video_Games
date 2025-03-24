@@ -13,7 +13,7 @@
     padding: 3rem 0;
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    /* gap: 3rem; */
 }
 
 .footer__left-container {
@@ -46,7 +46,6 @@
     flex-wrap: wrap;
     gap: 1rem;
 }
-
 .tags__tag {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -188,6 +187,7 @@
 
 .footer__description {
     color: var(--color-principal);
+    text-align: center;
     padding: 2rem;
     background-color: var(--color-footer-down);
 }
@@ -195,14 +195,18 @@
 .footer__text {
     width: 55%;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     white-space: nowrap;
-
-
-
-
-
-
-
-
 }
+
+.footer__author {
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+

@@ -12,8 +12,8 @@
 
     /* LAYOUT */
     .layout {
-        width: 70%;
-        min-width: 74rem;
+        width: 72%;
+        min-width: 72rem;
         margin: 0 auto;
         /* modificamos el grid template-areas  */
         grid-template-areas:
@@ -27,6 +27,7 @@
             "main main"
             "aside aside"
     }
+
 
     /* HEADER */
     .layout__header {
@@ -59,7 +60,7 @@
 
     /* MENU MOBILE */
 
-    /* Mostarmos el boton cuando sea menos de 1024px y en los estilos de la navbar , le aplicamos los mismos que al boton search y su icono  */
+    /* Mostramos el boton cuando sea menos de 1024px y en los estilos de la navbar , le aplicamos los mismos que al boton search y su icono  */
 
     .navbar__mobile-btn {
         display: flex;
@@ -172,6 +173,12 @@
 
     /* HIGHLIGHTS / MEJORES MOMENTOS */
 
+    .layout__carousel-games {
+        background-color:transparent;
+        padding: 0.5rem;
+     
+    }
+
     .highlights__posts {
         width: 100%;
         flex-direction: column;
@@ -186,8 +193,7 @@
 
     .highlights__img {
         transition: all 300ms ease-in-out;
-        height: 17rem;
-        width: 65rem;
+    
     }
 
     .highlights__subheader {
@@ -195,10 +201,18 @@
         justify-content: center;
     }
 
+    .highlights__img {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
     /* VIDEOS */
     .videos__main-video {
         width: 75%;
     }
+
+
 
     /* CAROUSEL VIDEOS */
 
@@ -209,6 +223,10 @@
     .carousel-games__item {
         flex-basis: 50%;
 
+    }
+
+    .main__news {
+        width: 100%;
     }
 
     /* ASIDE / BARRA LATERAL */
@@ -226,22 +244,16 @@
     .footer__container {
         width: 70%;
         min-width: 70rem;
-        flex-direction: column;
-    }
-
-    .footer__left-container,
-    .footer__center-container,
-    .footer__right-container {
-        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
 
 
-    .tags__tag {
-        width: 10rem;
-        height: 5rem;
-        text-align: center;
-    }
+
+
 
     .footer__title {
         text-align: center;
@@ -304,7 +316,7 @@
         padding: 3rem;
         margin-right: 0;
     }
-
+  
     /* FOOTER */
 
     .footer__container {
@@ -337,8 +349,8 @@
 
 @media (max-width: 592px) {
     .layout {
-        width: 35%;
-        min-width: 35rem;
+        width: 37%;
+        min-width: 37rem;
         margin: 0 auto;
     }
 
@@ -389,9 +401,9 @@
     .highlights__img {
         display: flex;
         flex-direction: column;
-        width: 170rem;
-        height: 30rem;
+       
     }
+
 
     /* VIDEOS */
 
@@ -451,23 +463,124 @@
     .posts__container {
         flex-direction: column;
     }
+    .carousel-games__list {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-games__img {
+        width: 100%;
+    }
+
+    .layout__footer {
+        /* Mantén el ancho del footer al 100% */
+        width: 100%;
+        max-width: none;
+    }
+
+
+        .footer__container {
+            width: 100vw !important; /* Forzar el ancho a 100% del viewport */
+            max-width: 592px !important; /* Asegúrate de que no exceda 350px */
+            min-width: 0 !important; /* Cambia a 0 para permitir que se reduzca */
+            margin: 0 auto; /* Centra el contenedor */
+            padding: 1rem; /* Ajusta el padding si es necesario */
+            display: flex; /* Mantén el display flex si es necesario */
+            flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+            gap: 1rem; /* Ajusta el espacio entre elementos */
+        }
+    
+    
+
+    .footer__left-container,
+    .footer__about,
+    .about__title,
+    .about__description,
+    .footer__tags,
+    .footer__title,
+    .tags__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 592px !important;
+        width:100% !important
+    }
+    .footer__text {
+        /* width: 55%; */
+        margin: 0 auto;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    
+    .footer__author {
+        font-weight: 600;
+    }
+
+
+
+
+
+
+    .news__post {
+        max-width: 52rem !important;
+    }
+
+
+
 }
 
+
+
 @media (max-width: 350px) {
-    .layout {
-        width: 35%;
-        min-width: 35rem;
-        margin: 0;
+
+
+    .layout__footer {
+        /* Mantén el ancho del footer al 100% */
+        width: 100%;
+        max-width: none;
     }
 
-    .footer__container {
-        width: 50rem;
-        margin: 0;
+
+        .footer__container {
+            width: 100vw !important; /* Forzar el ancho a 100% del viewport */
+            max-width: 350px !important; /* Asegúrate de que no exceda 350px */
+            min-width: 0 !important; /* Cambia a 0 para permitir que se reduzca */
+            margin: 0 auto; /* Centra el contenedor */
+            padding: 1rem; /* Ajusta el padding si es necesario */
+            display: flex; /* Mantén el display flex si es necesario */
+            flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+            gap: 1rem; /* Ajusta el espacio entre elementos */
+        }
+    
+    
+
+    .footer__left-container,
+    .footer__about,
+    .about__title,
+    .about__description,
+    .footer__tags,
+    .footer__title,
+    .tags__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px !important;
+        width:100% !important
     }
 
-    .tags__tag {
-        padding: 0rem;
-        margin: 1rem
+    .footer__text {
+        /* width: 55%; */
+        margin: 0 auto;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    
+    .footer__author {
+        font-weight: 600;
     }
 
+    .news__post {
+        max-width: 35rem !important;
+    }
+
+  
 }
